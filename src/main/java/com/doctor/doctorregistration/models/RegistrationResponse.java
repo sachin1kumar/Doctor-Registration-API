@@ -2,18 +2,20 @@ package com.doctor.doctorregistration.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.math.BigInteger;
+
 @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
 public class RegistrationResponse {
-    private int doctorId;
+    private BigInteger doctorId;
 
     public RegistrationResponse() {
     }
 
-    public int getDoctorId() {
+    public BigInteger getDoctorId() {
         return doctorId;
     }
 
-    public void setDoctorId(int doctorId) {
+    public void setDoctorId(BigInteger doctorId) {
         this.doctorId = doctorId;
     }
 }
